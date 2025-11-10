@@ -1,0 +1,41 @@
+.container {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+  box-shadow: ;
+  box-shadow: 28px 20px 27px 3px rgba(0, 0, 0, 1);
+  webkit-box-shadow: 28px 20px 27px 3px rgba(0, 0, 0, 1);
+  moz-box-shadow: 28px 20px 27px 3px rgba(0, 0, 0, 1);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(135deg, #79797a, #00d2ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
