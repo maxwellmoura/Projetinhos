@@ -53,6 +53,10 @@ Exibe a **hora atualizada em tempo real**, utilizando o hook `useEffect` e `setI
 Exibe o **preenchimento de formulários, com erros caso fuja das regras**, utilizando o hook `useState` e validações com handleSubmit
 > Conceitos: Este é um projeto React que valida os campos **Nome** e **E-mail** de um formulário utilizando **Regex** e **manipulação de estado**.
 
+### 📝 [ToDoList](./ToDoList)
+Uma lista de tarefas completa desenvolvida em **React JS puro**, com modal de criação/edição e controle de status de conclusão.  
+> Conceitos: `useState`, `useEffect`, comunicação entre componentes, estado compartilhado, modais controlados e **CSS global unificado (App.css)**.
+
 ---
 
 ## 🧠 Objetivo do repositório
