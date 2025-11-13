@@ -57,6 +57,10 @@ Exibe o **preenchimento de formulários, com erros caso fuja das regras**, utili
 Uma lista de tarefas completa desenvolvida em **React JS puro**, com modal de criação/edição e controle de status de conclusão.  
 > Conceitos: `useState`, `useEffect`, comunicação entre componentes, estado compartilhado, modais controlados e **CSS global unificado (App.css)**.
 
+### 🔐 [Gerador de Senhas](./gerador-senhas)
+
+Este projeto é um **Gerador de Senhas** desenvolvido em **React**. Ele permite criar senhas seguras e personalizadas com letras maiúsculas, minúsculas, números e símbolos.
+> Conceitos: Utilizando o **React Hooks** (`useState`), **Funções puras do JavaScript** separados em um módulo `lib/password.js` com uso de **Math.random()** e a API local do navegador **Clipboard API** manipulado no (`navigator.clipboard.writeText`) este projeto representa uma evolução nos conceitos aplicados até aqui.
 ---
 
 ## 🧠 Objetivo do repositório
