@@ -61,6 +61,12 @@ Uma lista de tarefas completa desenvolvida em **React JS puro**, com modal de cr
 
 Este projeto é um **Gerador de Senhas** desenvolvido em **React**. Ele permite criar senhas seguras e personalizadas com letras maiúsculas, minúsculas, números e símbolos.
 > Conceitos: Utilizando o **React Hooks** (`useState`), **Funções puras do JavaScript** separados em um módulo `lib/password.js` com uso de **Math.random()** e a API local do navegador **Clipboard API** manipulado no (`navigator.clipboard.writeText`) este projeto representa uma evolução nos conceitos aplicados até aqui.
+
+### 🌓 [Projeto Dark/Light Mode](./darkmode-react)
+
+> Conceitos: Usando o **React Hooks** `useState` (gerenciar estado do tema) e o `useEffect` (sincronizar tema no DOM) fazendo o uso do o **localStorage** para persistência.
+Manipulação direta do **document.body.classList**. - CSS com: - Variáveis (`--bg-color`, `--text-color`)  - Classes condicionais (`body.dark`, `body.light`) - Transições (`transition: background, color`) e pra finalizar usndo a leitura do tema com `window.matchMedia('(prefers-color-scheme: dark)')`
+ 
 ---
 
 ## 🧠 Objetivo do repositório
@@ -69,6 +75,8 @@ Criar um **laboratório pessoal de estudos** para:
 - Compreender o uso de **hooks** (`useState`, `useEffect`)  
 - Desenvolver lógica e boas práticas  
 - Montar uma base de **portfólio evolutivo**
+
+
 
 ---
 
