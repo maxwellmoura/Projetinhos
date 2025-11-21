@@ -1,87 +1,108 @@
 # 💼 Projetinhos
 
-Repositório pessoal com **mini projetos em JavaScript e React** desenvolvidos para praticar lógica de programação, hooks, componentes e manipulação de estados.
+Repositório pessoal com **mini projetos em JavaScript e React**
+desenvolvidos para praticar lógica de programação, hooks, componentes e
+manipulação de estados.
 
-Cada pasta neste repositório representa um **projeto independente**, com seu próprio código, dependências e README individual.
+Cada pasta neste repositório representa um **projeto independente**, com
+seu próprio código, dependências e README individual.
 
----
+------------------------------------------------------------------------
 
 ## 🚀 Tecnologias utilizadas
-- **React.js** ⚛️  
-- **JavaScript (ES6+)**  
-- **HTML5 / CSS3**  
-- **Node.js + NPM**
 
----
+-   **React.js** ⚛️\
+-   **JavaScript (ES6+)**\
+-   **HTML5 / CSS3**\
+-   **Node.js + NPM**
+
+------------------------------------------------------------------------
 
 ## 📂 Estrutura do repositório
-```
-Projetinhos/
-├── contador/
-├── caixa-eletronico/
-├── relogio/
-└── ...
-```
 
-Cada projeto possui:
-- `src/` → código-fonte  
-- `public/` → arquivos estáticos  
-- `package.json` → dependências específicas  
-- `README.md` → explicação individual
+    Projetinhos/
+    ├── contador/
+    ├── caixa-eletronico/
+    ├── relogio/
+    ├── validador-formulario/
+    ├── gerador-senhas/
+    ├── darkmode-react/
+    ├── ToDoList/
+    └── galeria-imagens/    
 
----
+------------------------------------------------------------------------
 
 ## 🧩 Projetos incluídos
 
-### 🧮 [Contador](./contador)
-Um contador simples com botões de **incrementar** e **resetar**, criado em React.  
-> Conceitos: `useState`, eventos e renderização condicional.
 
----
+### 🧮 [Contador](./contador)
+
+Um contador simples com botões de **incrementar** e **resetar**, criado
+em React.\
+\> Conceitos: `useState`, eventos e renderização condicional.
+
+------------------------------------------------------------------------
 
 ### 💰 [Caixa Eletrônico](./caixa-eletronico)
-Simula um **caixa eletrônico**, validando o valor do saque e atualizando o saldo automaticamente.  
-> Conceitos: `if / else`, validações numéricas e gerenciamento de estados com `useState`.
 
----
+Simula um **caixa eletrônico**, validando o valor do saque e atualizando
+o saldo automaticamente.\
+\> Conceitos: `if / else`, validações numéricas e gerenciamento de
+estados com `useState`.
+
+------------------------------------------------------------------------
 
 ### ⏰ [Relógio Digital](./relogio)
-Exibe a **hora atualizada em tempo real**, utilizando o hook `useEffect` e `setInterval`.  
-> Conceitos: ciclo de vida de componentes e atualização contínua de estado.
+
+Exibe a **hora atualizada em tempo real**, utilizando o hook `useEffect`
+e `setInterval`.\
+\> Conceitos: ciclo de vida de componentes e atualização contínua de
+estado.
+
+------------------------------------------------------------------------
 
 ### 🧠 [Validador de Formulário Simples](./validador-formulario)
-Exibe o **preenchimento de formulários, com erros caso fuja das regras**, utilizando o hook `useState` e validações com handleSubmit
-> Conceitos: Este é um projeto React que valida os campos **Nome** e **E-mail** de um formulário utilizando **Regex** e **manipulação de estado**.
 
-### 📝 [ToDoList](./ToDoList)
-Uma lista de tarefas completa desenvolvida em **React JS puro**, com modal de criação/edição e controle de status de conclusão.  
-> Conceitos: `useState`, `useEffect`, comunicação entre componentes, estado compartilhado, modais controlados e **CSS global unificado (App.css)**.
+Valida campos **Nome** e **E-mail** com Regex e lógica de validação.\
+\> Conceitos: `useState`, Regex, feedback visual de erros.
+
+------------------------------------------------------------------------
 
 ### 🔐 [Gerador de Senhas](./gerador-senhas)
 
-Este projeto é um **Gerador de Senhas** desenvolvido em **React**. Ele permite criar senhas seguras e personalizadas com letras maiúsculas, minúsculas, números e símbolos.
-> Conceitos: Utilizando o **React Hooks** (`useState`), **Funções puras do JavaScript** separados em um módulo `lib/password.js` com uso de **Math.random()** e a API local do navegador **Clipboard API** manipulado no (`navigator.clipboard.writeText`) este projeto representa uma evolução nos conceitos aplicados até aqui.
+Gera senhas fortes com letras, números e símbolos.\
+\> Conceitos: Hooks, `Math.random()`, clipboard API.
 
-### 🌓 [Projeto Dark/Light Mode](./darkmode-react)
+------------------------------------------------------------------------
 
-> Conceitos: Usando o **React Hooks** `useState` (gerenciar estado do tema) e o `useEffect` (sincronizar tema no DOM) fazendo o uso do o **localStorage** para persistência.
-Manipulação direta do **document.body.classList**. - CSS com: - Variáveis (`--bg-color`, `--text-color`)  - Classes condicionais (`body.dark`, `body.light`) - Transições (`transition: background, color`) e pra finalizar usndo a leitura do tema com `window.matchMedia('(prefers-color-scheme: dark)')`
- 
----
+### 🌓 [Dark/Light Mode](./darkmode-react)
 
-## 🧠 Objetivo do repositório
-Criar um **laboratório pessoal de estudos** para:
-- Praticar **JavaScript aplicado ao React**  
-- Compreender o uso de **hooks** (`useState`, `useEffect`)  
-- Desenvolver lógica e boas práticas  
-- Montar uma base de **portfólio evolutivo**
+Tema claro/escuro com persistência em `localStorage`.\
+\> Conceitos: `useState`, `useEffect`, CSS variables.
 
+------------------------------------------------------------------------
 
+### 📝 [ToDoList](./ToDoList)
 
----
+Lista de tarefas completa com modal e edição.\
+\> Conceitos: estado global por prop drilling e modais controlados.
+
+------------------------------------------------------------------------
+
+### 📸 [Galeria de Imagens com Modal](./galeria-imagens)
+
+Um projeto completo em React com: - Modal com Zoom / Tela Cheia\
+- Navegação entre imagens (prev/next)\
+- Controles por teclado (ESC, ←, →)\
+- Componente Modal reutilizável\
+- Animações em CSS (`fadeIn`, `zoomIn`)
+
+> Conceitos: `useState`, `useEffect`, `useCallback`, manipulação
+> dinâmica de classes e acessibilidade.
 
 ## ⚙️ Como executar qualquer projeto
-```bash
+
+``` bash
 # Clone o repositório
 git clone https://github.com/maxwellmoura/Projetinhos.git
 
@@ -95,16 +116,17 @@ npm install
 npm start
 ```
 
----
+------------------------------------------------------------------------
 
 ## 🧑‍💻 Autor
-**Maxwell Moura**  
-Desenvolvedor Front-end em formação 💻  
-📍 [GitHub](https://github.com/maxwellmoura)  
-🌐 Foco em: React.js | Lógica de Programação | Boas Práticas
 
----
+**Maxwell Moura**\
+Desenvolvedor Front-end em formação 💻\
+📍 GitHub: https://github.com/maxwellmoura\
+🌐 Foco em: React.js \| Lógica de Programação \| Boas Práticas
+
+------------------------------------------------------------------------
 
 ### 🌱 Objetivo final
-> “Transformar pequenos projetos em grandes aprendizados.”  
-Cada um desses projetinhos é um passo no caminho para se tornar um **desenvolvedor front-end completo**.
+
+> "Transformar pequenos projetos em grandes aprendizados."
