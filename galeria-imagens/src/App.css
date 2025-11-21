@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #0f172a;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  min-height: 100vh;
+}
+
+h1{
+  text-align: center; 
+  margin: 32px 0 24px;
+  font-size: clamp(28px, 4vw, 36px);
+}
+
+.gallery {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width: min(1100px, 90vw);
+  margin: 0 auto 48px;
+}
+
+.thumbnail {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 16px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+}
+
+.thumbnail:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.18);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 24px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 18px;
+  width: min(900px, 100%);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: zoomIn 0.25s ease-out;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.35);
+}
+
+.modal-content.fullscreen {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  border-radius: 0;
+  background: #0f172a;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #0f172a;
+}
+
+.modal-content.fullscreen .modal-image {
+  max-height: unset;
+  flex: 1;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.modal-actions button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  min-width: 56px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.35);
+}
+
+.modal-actions button:nth-child(2),
+.modal-actions button:nth-child(3) {
+  background: #0f172a;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.5);
+}
+
+.modal-actions button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 18px rgba(37, 99, 235, 0.35);
+}
+
+.modal-actions button:disabled {
+  background: #cbd5f5;
+  color: #94a3b8;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0 }
+  to { transform: scale(1); opacity: 1 }
+}
