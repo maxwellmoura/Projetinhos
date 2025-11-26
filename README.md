@@ -28,7 +28,8 @@ seu próprio código, dependências e README individual.
     ├── gerador-senhas/
     ├── darkmode-react/
     ├── ToDoList/
-    └── galeria-imagens/    
+    └── galeria-imagens/
+    └──...
 
 ------------------------------------------------------------------------
 
