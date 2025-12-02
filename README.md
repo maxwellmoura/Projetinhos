@@ -18,7 +18,7 @@ seu próprio código, dependências e README individual.
 
 ------------------------------------------------------------------------
 
-## 📂 Estrutura do repositório
+## 📂 Estrutura do repositório Básicos
 
     Projetinhos/
     ├── contador/
@@ -28,8 +28,13 @@ seu próprio código, dependências e README individual.
     ├── gerador-senhas/
     ├── darkmode-react/
     ├── ToDoList/
-    └── galeria-imagens/
-    └──...
+    ├── galeria-imagens/
+    ├── likes/
+
+## ## 📂 Estrutura do repositório intermediarios
+    Projetinhos/
+    ├── sistema-cep
+    
 
 ------------------------------------------------------------------------
 
@@ -113,6 +118,27 @@ As reações permanecem salvas mesmo após recarregar a página.
 - Função genérica para incrementar reações sem repetir código
 - Botão global para resetar todas as reações
 - Uso de React Icons para ícones interativos e estilizados
+
+### Projetos Intermediarios
+
+# 📦 [Consulta de CEP](./sistema-cep) 
+Este projeto é uma aplicação simples desenvolvida em **React.js** que permite consultar endereços através do **CEP** usando a API pública **ViaCEP**.  
+Ao digitar um CEP e enviar o formulário, o sistema faz a requisição, valida o CEP, trata erros e exibe os dados recebidos.
+
+> Conceitos: `useState` e `searchByCEP()` via API **ViaCEP**
+
+✔️ Busca de endereço pelo CEP  
+✔️ Validação automática do CEP (somente números e exatamente 8 dígitos)  
+✔️ Tratamento de erros (CEP inválido ou inexistente)  
+✔️ Exibição dos dados retornados pela API:  
+- Logradouro  
+- Bairro  
+- Cidade  
+- Estado  
+- CEP formatado  
+✔️ Feedback visual de carregamento (loading)  
+✔️ Componentização simples e clara  
+✔️ Função externa `searchByCEP()` para organização do código
 
 ## ⚙️ Como executar qualquer projeto
 
