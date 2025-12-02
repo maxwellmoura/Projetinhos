@@ -28,7 +28,8 @@ seu próprio código, dependências e README individual.
     ├── gerador-senhas/
     ├── darkmode-react/
     ├── ToDoList/
-    └── galeria-imagens/    
+    └── galeria-imagens/
+    └──...
 
 ------------------------------------------------------------------------
 
@@ -99,6 +100,19 @@ Um projeto completo em React com: - Modal com Zoom / Tela Cheia\
 
 > Conceitos: `useState`, `useEffect`, `useCallback`, manipulação
 > dinâmica de classes e acessibilidade.
+
+### 🎭 [Sistema de Reações](./likes)
+Este projeto é um sistema completo de reações desenvolvido em React.js, permitindo que cada post receba likes, dislikes e corações, com persistência automática no localStorage.
+As reações permanecem salvas mesmo após recarregar a página.
+
+> Conceitos:  `useState`, `useEffect` e `localStorage`
+
+- Controle de múltiplas reações por post (like, dislike e coração)
+- Estado complexo em objeto ({ post1, post2, post3 })
+- Persistência de dados com localStorage (recarregou, manteve)
+- Função genérica para incrementar reações sem repetir código
+- Botão global para resetar todas as reações
+- Uso de React Icons para ícones interativos e estilizados
 
 ## ⚙️ Como executar qualquer projeto
 
