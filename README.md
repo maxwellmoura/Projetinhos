@@ -140,7 +140,7 @@ Ao digitar um CEP e enviar o formulário, o sistema faz a requisição, valida o
 ✔️ Componentização simples e clara  
 ✔️ Função externa `searchByCEP()` para organização do código
 
-### ☁️ Previsão do Tempo (React + OpenWeather API)
+### ☁️ [Previsão do Tempo (React + OpenWeather API)](./tempo)
 
 Este projeto é um **sistema de consulta do clima em tempo real**,
 desenvolvido em **React** utilizando a API pública do **OpenWeather**.\
