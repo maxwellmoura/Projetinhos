@@ -140,6 +140,26 @@ Ao digitar um CEP e enviar o formulário, o sistema faz a requisição, valida o
 ✔️ Componentização simples e clara  
 ✔️ Função externa `searchByCEP()` para organização do código
 
+### ☁️ Previsão do Tempo (React + OpenWeather API)
+
+Este projeto é um **sistema de consulta do clima em tempo real**,
+desenvolvido em **React** utilizando a API pública do **OpenWeather**.\
+O usuário digita o nome de uma cidade e recebe informações
+meteorológicas como temperatura, sensação térmica, umidade, vento e
+ícone ilustrativo do clima.
+
+>Conceitos aplicados
+
+-   **React Hooks** (`useState`, `useEffect`)
+-   Consumo de APIs com **fetch**
+-   Uso de **async/await**
+-   Tratamento de erros com `try/catch`
+-   Desestruturação de objetos JavaScript
+-   Renderização condicional no React
+-   Debounce manual usando `setTimeout`
+-   Modularização com componente `Script` responsável pela lógica de
+    busca
+    
 ## ⚙️ Como executar qualquer projeto
 
 ``` bash
